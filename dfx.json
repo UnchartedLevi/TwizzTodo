@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "TwizzTodo_backend": {
+      "main": "src/TwizzTodo_backend/main.mo",
+      "type": "motoko"
+    },
+    "TwizzTodo_frontend": {
+      "dependencies": [
+        "TwizzTodo_backend"
+      ],
+      "source": [
+        "src/TwizzTodo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "TwizzTodo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
